@@ -2,7 +2,7 @@ import React from 'react';
 import { Spotlight } from './ui/Sportlight'; 
 import { TextGenerateEffect } from './ui/text-generate-effect';
 import MagicButton from './ui/MagicButton';
-import { FaLocationArrow } from 'react-icons/fa';
+import { FaFileContract, FaLocationArrow } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
            md:text-lg lg:text-2xl'>
           Hi, I’m Mehakpreet Singh, an expert in Development, Design, and Digital Innovation.
           </p>
-
+<div className='flex gap-10'>
 
           <a href='#about'>
             <MagicButton 
@@ -36,7 +36,19 @@ const Hero = () => {
             icon={<FaLocationArrow />}
             position='left'
             />
+            
           </a>
+
+          <a href='#about'>
+            <MagicButton 
+            title="Hire Me"
+            icon={<FaFileContract />}
+            position='left'
+            otherClasses=' bg-purple-950  border-none'
+            />
+            
+          </a>
+          </div>
         </div>
       </div>
     </div>
