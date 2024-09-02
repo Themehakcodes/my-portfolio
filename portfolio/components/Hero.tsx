@@ -36,17 +36,7 @@ const Hero = () => {
             icon={<FaLocationArrow />}
             position='left'
             />
-            
-          </a>
 
-          <a href='#about'>
-            <MagicButton 
-            title="Hire Me"
-            icon={<FaFileContract />}
-            position='left'
-            otherClasses=' bg-purple-950  border-none'
-            />
-            
           </a>
           </div>
         </div>
