@@ -24,7 +24,7 @@ export const SquigglyUnderline = () => {
   }, [selectedLink, controls]);
 
   return (
-    <nav className="relative flex flex-col lg:flex-row items-center py-4 lg:py-8 px-4 lg:px-8">
+    <nav className="relative flex flex-col lg:flex-row items-center py-4 lg:py-8 px-4 lg:px-8 bg-gray-800">
       {/* Hamburger Menu for Mobile */}
       <div className="lg:hidden flex items-center justify-between w-full">
         <button
@@ -50,9 +50,7 @@ export const SquigglyUnderline = () => {
 
       {/* Navigation Links */}
       <motion.div
-        className={`flex flex-col lg:flex-row lg:gap-8 text-gray-600 w-full lg:w-auto lg:static ${
-          isOpen ? 'block' : 'hidden lg:flex'
-        }`}
+        className="flex flex-col lg:flex-row lg:gap-8 text-gray-600 w-full lg:w-auto absolute lg:static top-full left-0 bg-gray-800 lg:bg-transparent"
         initial={{ opacity: 0, height: 0 }}
         animate={{
           opacity: isOpen ? 1 : 0,
@@ -66,10 +64,10 @@ export const SquigglyUnderline = () => {
             <Link
               key={item.name}
               href={item.link}
-              className={`relative flex items-center px-4 py-2 rounded-md transition-colors duration-300 ${
+              className={`relative flex items-center px-2 py-2 rounded-md transition-colors duration-300 ${
                 isSelected
-                  ? 'text-gray-300 bg-slate-700'
-                  : 'hover:text-white hover:bg-slate-600'
+                  ? 'text-gray-300 stroke-orange-100'
+                  : 'hover:text-white'
               }`}
               onClick={() => {
                 setSelectedLink(item.name);
