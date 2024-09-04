@@ -1,4 +1,3 @@
-'user Client';
 import Grid from "@/components/Grid";
 import { navItems } from "@/data";
 import Hero from "@/components/Hero";
