@@ -3,6 +3,7 @@ import { Spotlight } from './ui/Sportlight';
 import { TextGenerateEffect } from './ui/text-generate-effect';
 import MagicButton from './ui/MagicButton';
 import { FaFileContract, FaLocationArrow } from 'react-icons/fa';
+import { SquigglyUnderline } from './ui/SquigglyUnderline';
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
           <h1 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
             Mehakpreet Singh
           </h1>
+
           <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words='Crafting Solutions with Expertise in Development, Design, and Beyond'
