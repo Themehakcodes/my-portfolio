@@ -7,6 +7,8 @@ import { SquigglyUnderline } from "@/components/ui/SquigglyUnderline";
 import { FaHome } from "react-icons/fa";
 import { testimonials } from "@/data/index";  // Ensure the path is correct
 import Testimonials from "@/components/Testimonials";
+import Approach from "@/components/Approach";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
         <Grid />
         <RecentProjects />
        <Testimonials />
+      <Approach />
+      <Footer />
       </div>
     </main>
   );
